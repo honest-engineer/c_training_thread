@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import datetime
+import os
 import threading
 import time
 
@@ -32,6 +33,8 @@ def main():
 
     threadA.join()
     threadB.join()
+
+    os._exit
 
 if __name__ == "__main__":
     main()
